@@ -1,0 +1,75 @@
+@font-face {
+  font-family: 'clock';
+  src: url('../fonts/digital-7.ttf');
+}
+
+$background: rgba(73,207,174, 1);
+$alarm_button: rgba(238,65,51, 1);
+$clock_color: rgba(255, 255, 255, 1);
+$clock_screen: rgba(67,74,84, 1);
+$clock_numbers: rgba(103,254,115, 1);
+
+body {
+  background-color: $background;
+  font-family: 'clock';
+  font-size: 200px;
+  color: $clock_numbers;
+}
+
+.parent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $clock_color;
+  border-radius: 15px;
+  padding: 20px 40px;
+}
+
+.top_button {
+  background-color: $alarm_button;
+  height: 20px;
+  width: 50%;
+  position: absolute;
+  top: -20px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.left_leg {
+  background-color: $clock_screen;
+  height: 30px;
+  width: 10%;
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.right_leg {
+  background-color: $clock_screen;
+  height: 30px;
+  width: 10%;
+  position: absolute;
+  bottom: -50px;
+  right: 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.clock_container {
+  text-align: center;
+  background-color: $clock_screen;
+  border-radius: 15px;
+  padding: 0 40px;
+  position: relative;
+}
+
+#clock {
+  min-width: 600px;
+}
